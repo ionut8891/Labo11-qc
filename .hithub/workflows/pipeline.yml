@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node.js
 
 on: [push, pull_request]
 
@@ -19,5 +19,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run ESLint
-        run: npx eslint . --ext .js
-        # Cette commande échoue et arrête le workflow si ESLint trouve des erreurs
+        run: eslint .
